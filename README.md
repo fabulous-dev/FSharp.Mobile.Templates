@@ -12,4 +12,6 @@ dotnet workload install ios
 ### Available templates
 - Blank Android (thanks @Dolfik1)
 - Blank iOS (thanks @edgarfgp)
+- Blank Mac Catalyst - currently not working
 - Xamarin.Forms - currently not working
+- Maui - currently not working
