@@ -16,7 +16,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App\App.fsproj" />
+    <ProjectReference Include="..\XFApp\XFApp.fsproj" />
   </ItemGroup>
   <!--
   <ItemGroup>

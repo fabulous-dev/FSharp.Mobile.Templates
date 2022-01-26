@@ -2,15 +2,12 @@ namespace App.Android
 
 open Android.App
 open Android.Content.PM
+open Android.Views
 open Android.Widget
 
 // type R = App.Android.Resource
 
-[<Activity(
-  Name = "org.fabulous.App.Android.MainActivity",
-  Label = "F# Android app on .NET 6.0",
-  MainLauncher = true,
-  LaunchMode = LaunchMode.SingleTask)>]
+[<Activity(Name = "org.fabulous.App.Android.MainActivity", MainLauncher = true)>]
 type MainActivity() =
   inherit Activity()
   
@@ -18,5 +15,8 @@ type MainActivity() =
     base.OnCreate(bundle)
     
     let text = new TextView(x)
-    text.Text <- "Hello, F#!"
+    text.Text <- "Hello, .NET 6 and F# 6!"
+    text.Gravity <- GravityFlags.Center
+    text.LayoutParameters <- new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent)
+    
     x.SetContentView(text)
