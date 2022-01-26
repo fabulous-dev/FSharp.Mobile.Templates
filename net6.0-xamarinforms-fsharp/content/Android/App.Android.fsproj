@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>App.Android</RootNamespace>
+    <AssemblyName>App.Android</AssemblyName>
+    <AndroidResgenFile>Resources/Resource.designer.cs</AndroidResgenFile>
+    <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <Compile Include="MainActivity.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App\App.fsproj" />
+  </ItemGroup>
+  <!--
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.FSharp.ResourceProvider" Version="1.0.1" />
+  </ItemGroup>
+  -->
+</Project>
