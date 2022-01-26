@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maui", "Maui", "{737572EB-7
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App.MacCatalyst", "net6.0-maccatalyst-fsharp\content\App.MacCatalyst.fsproj", "{F95635C3-EDDD-4AAB-B323-B4D74FB4B547}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MauiApp", "net6.0-maui-fsharp\MauiApp.fsproj", "{D9A4CB0B-62C3-4827-9408-B1B12C0EBAA8}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MauiApp", "net6.0-maui-fsharp\content\MauiApp.fsproj", "{D9A4CB0B-62C3-4827-9408-B1B12C0EBAA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
