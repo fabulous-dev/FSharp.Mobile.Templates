@@ -1,4 +1,4 @@
-﻿namespace App
+﻿namespace XFApp
 
 open Xamarin.Forms
 

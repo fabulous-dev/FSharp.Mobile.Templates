@@ -1,4 +1,4 @@
-﻿namespace App.iOS
+﻿namespace XFApp.iOS
 
 open UIKit
 

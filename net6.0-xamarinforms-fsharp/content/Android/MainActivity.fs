@@ -1,11 +1,11 @@
-namespace App.Android
+namespace XFApp.Android
 
 open Android.App
 open Android.Content.PM
 open Android.Widget
 open Xamarin.Forms.Platform.Android
 
-open App
+open XFApp
 
 // type R = App.Android.Resource
 
