@@ -5,3 +5,4 @@ In this repository, you can find all the templates for creating apps on iOS and 
 ### Available templates
 - Blank Android (thanks @Dolfik1)
 - Blank iOS (thanks @edgarfgp)
+- Xamarin.Forms - currently not working
