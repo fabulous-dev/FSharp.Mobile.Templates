@@ -7,6 +7,8 @@ In order to build and run the Android and iOS projects, you need to install the 
 ```
 dotnet workload install android
 dotnet workload install ios
+dotnet workload install maccatalyst
+dotnet workload install maui
 ```
 
 ### Available templates
