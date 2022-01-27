@@ -9,4 +9,4 @@ open Microsoft.Maui
 type MainApplication (handle: IntPtr, ownership: JniHandleOwnership) =
     inherit MauiApplication(handle, ownership)
 
-    override CreateMauiApp() = MauiProgram.CreateMauiApp()
+    override this.CreateMauiApp() = MauiProgram.CreateMauiApp()
