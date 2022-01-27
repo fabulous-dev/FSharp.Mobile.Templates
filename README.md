@@ -37,6 +37,49 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
   - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C# (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
   - Only tested on macOS M1 with `dotnet build -t:Run -f net6.0-ios` / `net6.0-android` / `net6.0-maccatalyst`
 
+### Install
+
+```
+$ dotnet new -i Mobile.FSharp.Templates
+```
+
+### How to create project
+
+After installation two templates will be added:
+
+```
+$ dotnet new
+
+...
+
+Templates                                         Short Name              Language          Tags
+-------------------------------------------------------------------------------------------------------
+F# Android Application                            android-fsharp          F#                Mobile.FSharp
+```
+
+To create project use `dotnet new` command:
+
+```
+$ mkdir TestApp
+$ cd TestApp
+$ dotnet new android-fsharp
+```
+
+After creation our test application let's build it:
+
+```
+$ dotnet build -c Release
+```
+
+### Build
+
+To build and test templates from package use `dotnet pack`:
+
+```
+$ dotnet pack -c Release
+$ dotnet new -i .\bin\Release\Mobile.FSharp.Templates.0.0.1.nupkg
+```
+
 ### Acknowledgements
 
 Thanks @Dolfik1 for the blank Android template.  
