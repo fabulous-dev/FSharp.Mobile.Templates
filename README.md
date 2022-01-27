@@ -25,5 +25,5 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 
 ### Acknowledgements
 
-Thanks @Dolfik1 for the blank Android template.
+Thanks @Dolfik1 for the blank Android template.  
 Thanks @edgarfgp for the blank iOS template.
