@@ -15,8 +15,15 @@ For `net6.0-xamarinforms-fsharp`, you'll also need to go into the file `nuget.co
 See https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry#authenticating-with-a-personal-access-token
 
 ### Available templates
-- Blank Android (thanks @Dolfik1)
-- Blank iOS (thanks @edgarfgp)
-- Blank Mac Catalyst - currently not working
-- Xamarin.Forms - currently not working
-- Maui - currently not working
+- Blank Android: ✔️
+- Blank iOS: ✔️
+- Blank Mac Catalyst: ❎ (see [#7](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/7))
+- Xamarin.Forms
+  - iOS: ✔️
+  - Android: ❎ (see [#5](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/5))
+- Maui: ❎ (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
+
+### Acknowledgements
+
+Thanks @Dolfik1 for the blank Android template.
+Thanks @edgarfgp for the blank iOS template.
