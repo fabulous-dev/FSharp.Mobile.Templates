@@ -13,7 +13,7 @@
     <Compile Include="MainActivity.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+    <PackageReference Include="Xamarin.Forms" Version="[5.0.0.11]" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFApp\XFApp.fsproj" />
