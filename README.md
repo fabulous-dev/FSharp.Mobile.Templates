@@ -32,6 +32,7 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
   - Project has to be run with `dotnet build -t:Run`. IDEs like Rider will otherwise try to debug it as an iOS app
 - Maui
   - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C#
+  - Only tested on macOS M1 with `dotnet build -t:Run -f net6.0-ios` / `net6.0-android` / `net6.0-maccatalyst`
 
 ### Acknowledgements
 
