@@ -8,6 +8,8 @@ type MyApp() as this =
     do this.MainPage <-
         ContentPage(
             Content = Label(
-                Text = "Hello from Xamarin.Forms, .NET 6 and F# 6!"
+                Text = "Hello from Xamarin.Forms, .NET 6 and F# 6!",
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center
             )
         )
