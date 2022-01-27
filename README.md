@@ -19,8 +19,8 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 - Blank iOS: ✔️
 - Blank Mac Catalyst: ❎ (see [#7](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/7))
 - Xamarin.Forms
-  - iOS: ✔️
   - Android: ❎ (see [#5](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/5))
+  - iOS: ✔️
 - Maui: ❎ (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
 
 ### Acknowledgements
