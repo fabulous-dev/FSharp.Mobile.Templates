@@ -22,7 +22,7 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
   - Android: ❎ (crash at start up [#5](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/5))
   - iOS: ✔️
 - Maui
-  - Android: ❎ (crash at start up)
+  - Android: ❎ (crash at start up [#9](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/9))
   - iOS: ✔️
   - Mac Catalyst: ✔️
 
