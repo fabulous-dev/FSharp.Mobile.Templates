@@ -4,6 +4,7 @@ open Android.App
 open Android.Content.PM
 open Android.OS
 open Microsoft.Maui
+open Microsoft.Maui.Essentials
 
 [<Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true)>]
 type MainActivity() =
