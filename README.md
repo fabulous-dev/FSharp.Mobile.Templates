@@ -21,7 +21,7 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 - Xamarin.Forms
   - Android: ❎ (see [#5](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/5))
   - iOS: ✔️
-- Maui: ❎ (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
+- Maui
   - Android: ❎ (crash at start up)
   - iOS: ✔️
   - Mac Catalyst: ✔️
@@ -31,7 +31,7 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 - Blank Mac Catalyst
   - Project has to be run with `dotnet build -t:Run`. IDEs like Rider will otherwise try to debug it as an iOS app
 - Maui
-  - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C#
+  - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C# (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
   - Only tested on macOS M1 with `dotnet build -t:Run -f net6.0-ios` / `net6.0-android` / `net6.0-maccatalyst`
 
 ### Acknowledgements
