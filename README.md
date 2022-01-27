@@ -15,7 +15,7 @@ For `net6.0-xamarinforms-fsharp`, you'll also need to go into the file `nuget.co
 See https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry#authenticating-with-a-personal-access-token
 
 ### Available templates
-- Blank Android: ✔️ (⚠️ resources can't be used for now, see [F# support is broken in Xamarin.Android](https://github.com/dotnet/fsharp/issues/12640))
+- Blank Android: ⚠️ (resources can't be used for now, see [F# support is broken in Xamarin.Android](https://github.com/dotnet/fsharp/issues/12640))
 - Blank iOS: ✔️
 - Blank Mac Catalyst: ✔️
 - Xamarin.Forms
