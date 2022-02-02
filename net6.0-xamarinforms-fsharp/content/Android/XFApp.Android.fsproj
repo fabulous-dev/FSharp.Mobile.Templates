@@ -3,10 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net6.0-android</TargetFramework>
     <OutputType>Exe</OutputType>
-    <RootNamespace>App.Android</RootNamespace>
-    <AssemblyName>App.Android</AssemblyName>
-    <AndroidResgenFile>Resources/Resource.designer.cs</AndroidResgenFile>
-    <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
+    <RootNamespace>XFApp.Android</RootNamespace>
+    <AssemblyName>XFApp.Android</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="AndroidManifest.xml" />
@@ -14,13 +12,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="[5.0.0.11]" />
+    <PackageReference Include="FSharp.Android.Resource" Version="0.0.1-beta" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFApp\XFApp.fsproj" />
   </ItemGroup>
-  <!--
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Android.FSharp.ResourceProvider" Version="1.0.1" />
-  </ItemGroup>
-  -->
 </Project>

@@ -103,5 +103,7 @@
         <AndroidAsset Include="$(MonoAndroidAssetsPrefix)/**/*" Exclude="$(MonoAndroidAssetsPrefix)/**/.*/**" />
         <Compile Include="Platforms\Android\MainActivity.fs" />
         <Compile Include="Platforms\Android\MainApplication.fs" />
+
+        <PackageReference Include="FSharp.Android.Resource" Version="0.0.1-beta" />
     </ItemGroup>
 </Project>
