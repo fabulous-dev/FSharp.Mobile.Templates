@@ -19,15 +19,18 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 - Blank iOS: ✔️
 - Blank Mac Catalyst: ✔️
 - Xamarin.Forms
-  - Android: ❎ (crash at start up [#5](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/5))
+  - Android: ✔️
   - iOS: ✔️
 - Maui
-  - Android: ❎ (crash at start up [#9](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/9))
+  - Android: ✔️
   - iOS: ✔️
   - Mac Catalyst: ✔️
 
 ### Known issues
 
+- First build fails on Android (native, XF and MAUI)
+  - You need to compile 2 times to get it working. It's a current limitation of FSharp.Android.Resource used to expose the resources.
+  - Also you might need to unload/reopen either the Android project or the solution for Intellisense to find the resources
 - Blank Mac Catalyst
   - Project has to be run with `dotnet build -t:Run`. IDEs like Rider will otherwise try to debug it as an iOS app
 - Maui
