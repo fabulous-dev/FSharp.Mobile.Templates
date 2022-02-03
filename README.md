@@ -30,7 +30,7 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 
 - First build fails on Android (native, XF and MAUI)
   - You need to compile 2 times to get it working. It's a current limitation of FSharp.Android.Resource used to expose the resources.
-  - Also you might need to unload/reopen either the Android project or the solution for Intellisense to find the resources
+  - You might also need to unload/reopen either the Android project or the solution for Intellisense to find the resources
 - Blank Mac Catalyst
   - Project has to be run with `dotnet build -t:Run`. IDEs like Rider will otherwise try to debug it as an iOS app
 - Maui
