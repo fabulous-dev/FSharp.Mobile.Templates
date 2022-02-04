@@ -50,7 +50,6 @@ After installation two templates will be added:
 ```
 $ dotnet new
 
-...
 
 Templates                                         Short Name              Language          Tags
 -------------------------------------------------------------------------------------------------------
