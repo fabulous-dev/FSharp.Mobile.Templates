@@ -43,9 +43,9 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 $ dotnet new -i FSharp.Mobile.Templates
 ```
 
-### How to create project
+### How to use
 
-After installation two templates will be added:
+After installation, several templates will be added:
 
 ```
 $ dotnet new
@@ -72,7 +72,7 @@ $ dotnet build -c Release
 
 ### Build
 
-To build and test templates from package use `dotnet pack`:
+To build and test the templates locally:
 
 ```
 $ dotnet pack -c Release
