@@ -1,4 +1,4 @@
-name: Pack template
+name: Pack templates
 on:
    push:
      branches: [ main ]
@@ -14,7 +14,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Pack
-      run: dotnet pack --configuration Release --output nupkgs --version-suffix "nightly-${GITHUB_RUN_ID}" FSharp.Android.Mobile.Templates.proj
+      run: dotnet pack --configuration Release --output nupkgs --version-suffix "nightly-${GITHUB_RUN_ID}" FSharp.Mobile.Templates.proj
     - name: Push
       run: |
         dotnet nuget add source https://nuget.pkg.github.com/fabulousfx/index.json --name github
