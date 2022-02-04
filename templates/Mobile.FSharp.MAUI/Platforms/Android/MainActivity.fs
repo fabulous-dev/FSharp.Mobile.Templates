@@ -6,11 +6,12 @@ open Android.OS
 open Microsoft.Maui
 open Microsoft.Maui.Essentials
 
-[<Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true)>]
+[<Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, ConfigurationChanges = (ConfigChanges.ScreenSize ||| ConfigChanges.Orientation ||| ConfigChanges.UiMode ||| ConfigChanges.ScreenLayout ||| ConfigChanges.SmallestScreenSize))>]
 type MainActivity() =
     inherit MauiAppCompatActivity()
 
     override this.OnCreate(savedInstanceState: Bundle) =
+        Resource.UpdateIdValues()
         base.OnCreate(savedInstanceState)
         Platform.Init(this, savedInstanceState)
 
