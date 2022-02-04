@@ -4,7 +4,7 @@
   "classifications": [ "FSharp.Mobile" ], 
   "name": "F# Android Application",
   "identity": "FSharp.Mobile.Templates.Android",         
-  "groupIdentity": "FSharp.Mobile.Templates",
+  "groupIdentity": "FSharp.Mobile.Templates.Android",
   "shortName": "android-fsharp",
   "tags": {
     "language": "F#",

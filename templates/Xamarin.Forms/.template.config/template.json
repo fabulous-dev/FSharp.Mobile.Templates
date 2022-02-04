@@ -4,7 +4,7 @@
   "classifications": [ "FSharp.Mobile" ], 
   "name": "F# Xamarin.Forms Application",
   "identity": "FSharp.Mobile.Templates.XamarinForms",         
-  "groupIdentity": "FSharp.Mobile.Templates",
+  "groupIdentity": "FSharp.Mobile.Templates.XamarinForms",
   "shortName": "xf-fsharp",
   "tags": {
     "language": "F#",
