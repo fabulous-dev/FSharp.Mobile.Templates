@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0-ios</TargetFramework>
     <OutputType>Exe</OutputType>
-    <SupportedOSPlatformVersion>15.2</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
 </PropertyGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
