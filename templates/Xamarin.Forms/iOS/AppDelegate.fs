@@ -11,5 +11,5 @@ type AppDelegate() =
 
     override this.FinishedLaunching(app, options) =        
         Xamarin.Forms.Forms.Init()
-        this.LoadApplication(MyApp())
+        this.LoadApplication(App())
         base.FinishedLaunching(app, options)

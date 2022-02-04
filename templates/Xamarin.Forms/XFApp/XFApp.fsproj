@@ -1,16 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0-ios;net6.0-android</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="App.fs" />
   </ItemGroup>
-
-  <ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' ">
     <PackageReference Include="Xamarin.Forms" Version="[5.0.0.11]" />
   </ItemGroup>
-
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-android' ">
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+  </ItemGroup>
 </Project>
