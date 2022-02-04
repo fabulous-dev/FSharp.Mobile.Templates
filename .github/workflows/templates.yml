@@ -1,0 +1,36 @@
+name: Pack template
+on:
+   push:
+     branches: [ main ]
+
+jobs:
+  github:
+    runs-on: ubuntu-latest
+    environment: 'github'
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Pack
+      run: dotnet pack --configuration Release --output nupkgs --version-suffix "nightly-${GITHUB_RUN_ID}" FSharp.Android.Mobile.Templates.proj
+    - name: Push
+      run: |
+        dotnet nuget add source https://nuget.pkg.github.com/fabulousfx/index.json --name github
+        dotnet nuget push "nupkgs/*.nupkg" --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
+
+  nuget:
+    runs-on: ubuntu-latest
+    environment: 'nuget'
+    needs: github
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Pack
+      run: dotnet pack --configuration Release --output nupkgs FSharp.Mobile.Templates.proj
+    - name: Push
+      run: dotnet nuget push "nupkgs/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate

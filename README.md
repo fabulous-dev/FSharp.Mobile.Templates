@@ -11,7 +11,7 @@ dotnet workload install maccatalyst
 dotnet workload install maui
 ```
 
-For `net6.0-xamarinforms-fsharp`, you'll also need to go into the file `nuget.config` and replace `USERNAME` with your GitHub username and `TOKEN` with your personal access token.
+For `FSharp.Mobile.XamarinForms`, you'll also need to go into the file `nuget.config` and replace `USERNAME` with your GitHub username and `TOKEN` with your personal access token.
 See https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry#authenticating-with-a-personal-access-token
 
 ### Available templates
@@ -34,8 +34,51 @@ See https://docs.github.com/en/packages/working-with-a-github-packages-registry/
 - Blank Mac Catalyst
   - Project has to be run with `dotnet build -t:Run`. IDEs like Rider will otherwise try to debug it as an iOS app
 - Maui
-  - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C# (see [#8](https://github.com/fabulousfx/net6.0-mobile-fsharp/issues/8))
+  - For the moment, it requires an ugly custom import in the fsproj for all `Platforms/**/*` files. I believe we can fix this directly in Maui Sdk and keep it compatible with C# (see [#8](https://github.com/fabulousfx/FSharp.Mobile.Templates/issues/8))
   - Only tested on macOS M1 with `dotnet build -t:Run -f net6.0-ios` / `net6.0-android` / `net6.0-maccatalyst`
+
+### Install
+
+```
+$ dotnet new -i FSharp.Mobile.Templates
+```
+
+### How to create project
+
+After installation two templates will be added:
+
+```
+$ dotnet new
+
+...
+
+Templates                                         Short Name              Language          Tags
+-------------------------------------------------------------------------------------------------------
+F# Android Application                            android-fsharp          F#                FSharp.Mobile
+```
+
+To create a project, use `dotnet new`:
+
+```
+$ mkdir TestApp
+$ cd TestApp
+$ dotnet new android-fsharp
+```
+
+After creating the application, you can build it with `dotnet build`:
+
+```
+$ dotnet build -c Release
+```
+
+### Build
+
+To build and test templates from package use `dotnet pack`:
+
+```
+$ dotnet pack -c Release
+$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.0.0.1.nupkg
+```
 
 ### Acknowledgements
 
