@@ -3,9 +3,9 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageVersion>0.0.1</PackageVersion>
-    <PackageId>Mobile.FSharp.Templates</PackageId>
-    <Title>Mobile FSharp Templates</Title>
-    <Authors>Fabulous Team</Authors>
+    <PackageId>FSharp.Mobile.Templates</PackageId>
+    <Title>FSharp.Mobile.Templates</Title>
+    <Authors>Fabulous contributors</Authors>
     <Description>.NET Core SDK templates for bootstrapping new mobile projects in F#.</Description>
     <PackageTags>dotnet-new;templates;mobile;fsharp</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>

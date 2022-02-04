@@ -1,10 +1,10 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Fabulous Team",
-  "classifications": [ "Mobile.FSharp" ], 
+  "author": "Fabulous contributors",
+  "classifications": [ "FSharp.Mobile" ], 
   "name": "F# Android Application",
-  "identity": "Mobile.FSharp.Template.Android",         
-  "groupIdentity": "Mobile.FSharp.Template",
+  "identity": "FSharp.Mobile.Template.Android",         
+  "groupIdentity": "FSharp.Mobile.Templates",
   "shortName": "android-fsharp",
   "tags": {
     "language": "F#",

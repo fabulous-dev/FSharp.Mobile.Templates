@@ -1,22 +1,29 @@
 namespace App.Android
 
+open System
+
 open Android.App
-open Android.Content.PM
+open Android.Content
+open Android.OS
+open Android.Runtime
 open Android.Views
 open Android.Widget
 
-// type R = App.Android.Resource
+[<Activity (Label = "App.Android", MainLauncher = true, Icon = "@mipmap/icon")>]
+type MainActivity () =
+    inherit Activity ()
 
-[<Activity(Name = "org.fabulous.App.Android.MainActivity", MainLauncher = true)>]
-type MainActivity() =
-  inherit Activity()
-  
-  override x.OnCreate(bundle) =
-    base.OnCreate(bundle)
-    
-    let text = new TextView(x)
-    text.Text <- "Hello, .NET 6 and F# 6!"
-    text.Gravity <- GravityFlags.Center
-    text.LayoutParameters <- new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent)
-    
-    x.SetContentView(text)
+    let mutable count:int = 1
+
+    override this.OnCreate (bundle) =
+        base.OnCreate (bundle)
+
+        // Set our view from the "main" layout resource
+        this.SetContentView (Resource.Layout.Main)
+
+        // Get our button from the layout resource, and attach an event to it
+        let button = this.FindViewById<Button>(Resource.Id.myButton)
+        button.Click.Add (fun args -> 
+            button.Text <- $"%d{count} clicks!"
+            count <- count + 1
+        )

@@ -3,8 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net6.0-android</TargetFramework>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XFApp.Android</RootNamespace>
-    <AssemblyName>XFApp.Android</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="AndroidManifest.xml" />
@@ -12,7 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="[5.0.0.11]" />
-    <PackageReference Include="FSharp.Android.Resource" Version="0.0.2-beta" />
+    <PackageReference Include="FSharp.Android.Resource" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFApp\XFApp.fsproj" />

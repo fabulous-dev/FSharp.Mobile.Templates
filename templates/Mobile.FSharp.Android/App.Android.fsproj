@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net6.0-android</TargetFramework>
     <OutputType>Exe</OutputType>
-    <RootNamespace>App.Android</RootNamespace>
-    <AssemblyName>App.Android</AssemblyName>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
   </PropertyGroup>
   <ItemGroup>
     <None Include="AndroidManifest.xml" />
     <Compile Include="MainActivity.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="FSharp.Android.Resource" Version="0.0.1-beta" />
+    <PackageReference Include="FSharp.Core" Version="6.0.1" />
+    <PackageReference Include="FSharp.Android.Resource" Version="1.0.0" />
   </ItemGroup>
 </Project>
