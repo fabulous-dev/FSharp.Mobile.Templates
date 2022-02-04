@@ -51,9 +51,10 @@ After installation, several templates will be added:
 $ dotnet new
 
 
-Templates                                         Short Name              Language          Tags
--------------------------------------------------------------------------------------------------------
-F# Android Application                            android-fsharp          F#                FSharp.Mobile
+Template Name                 Short Name      Language  Tags         
+----------------------------  --------------  --------  -------------
+F# Android Application        android-fsharp  F#        FSharp.Mobile
+F# Xamarin.Forms Application  xf-fsharp       F#        FSharp.Mobile
 ```
 
 To create a project, use `dotnet new`:
