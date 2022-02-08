@@ -11,7 +11,7 @@ dotnet workload install maccatalyst
 dotnet workload install maui
 ```
 
-For `FSharp.Mobile.XamarinForms`, you'll also need to go into the file `nuget.config` and replace `USERNAME` with your GitHub username and `TOKEN` with your personal access token.
+For the Xamarin.Forms template, you'll also need to go into the file `nuget.config` and replace `USERNAME` with your GitHub username and `TOKEN` with your personal access token.
 See https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry#authenticating-with-a-personal-access-token
 
 ### Available templates
