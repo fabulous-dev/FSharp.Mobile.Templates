@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>App.iOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.fabulous.AppiOS</string>
+	<string>org.fabulous.App.iOS</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
