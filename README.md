@@ -83,5 +83,5 @@ $ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.0.0.4.nupkg
 
 ### Acknowledgements
 
-Thanks @Dolfik1 for the blank Android template.  
-Thanks @edgarfgp for the blank iOS template.
+Thanks [@Dolfik1](https://github.com/Dolfik1) for the blank Android template.  
+Thanks [@edgarfgp](https://github.com/edgarfgp) for the blank iOS template.
