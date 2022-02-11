@@ -54,6 +54,7 @@ $ dotnet new
 Template Name                 Short Name      Language  Tags         
 ----------------------------  --------------  --------  -------------
 F# Android Application        android-fsharp  F#        FSharp.Mobile
+F# iOS Application            ios-fsharp      F#        FSharp.Mobile
 F# Xamarin.Forms Application  xf-fsharp       F#        FSharp.Mobile
 ```
 
@@ -77,7 +78,7 @@ To build and test the templates locally:
 
 ```
 $ dotnet pack -c Release
-$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.0.0.1.nupkg
+$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.0.0.4.nupkg
 ```
 
 ### Acknowledgements

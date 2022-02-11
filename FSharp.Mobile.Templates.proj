@@ -13,7 +13,7 @@
     <NoBuild>true</NoBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <NoDefaultExcludes>true</NoDefaultExcludes>
-    <VersionPrefix>0.0.3</VersionPrefix>
+    <VersionPrefix>0.0.4</VersionPrefix>
     <TargetFramework>netstandard2.0</TargetFramework>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <IncludeContentInPack>true</IncludeContentInPack>
