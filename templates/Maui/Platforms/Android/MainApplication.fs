@@ -1,4 +1,4 @@
-﻿namespace MauiApp
+﻿namespace MauiAppFSharp
 
 open Android.App
 open Microsoft.Maui
@@ -7,6 +7,6 @@ open Microsoft.Maui
 type MainApplication(handle, ownership) =
     inherit MauiApplication(handle, ownership)
 
-    do MauiApp.Resource.UpdateIdValues()
+    do MauiAppFSharp.Resource.UpdateIdValues()
     
     override _.CreateMauiApp() = MauiProgram.CreateMauiApp()

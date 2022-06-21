@@ -1,4 +1,4 @@
-﻿namespace MauiApp
+﻿namespace MauiAppFSharp
 
 open Microsoft.Maui.Controls
 open Microsoft.Maui.Controls.Xaml

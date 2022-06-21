@@ -1,4 +1,4 @@
-namespace MauiApp;
+namespace MauiAppFSharp
 
 open System
 open Microsoft.Maui

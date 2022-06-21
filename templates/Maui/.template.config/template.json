@@ -10,7 +10,7 @@
     "language": "F#",
     "type": "project"
   },
-  "sourceName": "MauiApp",
+  "sourceName": "MauiAppFSharp",
   "preferNameDirectory": true,
   "sources": [
     {

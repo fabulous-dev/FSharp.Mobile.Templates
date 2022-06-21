@@ -6,16 +6,16 @@
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
-		<RootNamespace>MauiApp</RootNamespace>
+		<RootNamespace>MauiAppFSharp</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<EnableDefaultItems>false</EnableDefaultItems>
 
 		<!-- Display name -->
-		<ApplicationTitle>MauiApp</ApplicationTitle>
+		<ApplicationTitle>MauiAppFSharp</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mauiapp</ApplicationId>
+		<ApplicationId>com.companyname.mauiappfsharp</ApplicationId>
 		<ApplicationIdGuid>8bbed4cd-aea0-477e-9d2c-a11eb2a9d9e0</ApplicationIdGuid>
 
 		<!-- Versions -->

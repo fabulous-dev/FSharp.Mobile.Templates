@@ -1,4 +1,4 @@
-﻿namespace MauiApp
+﻿namespace MauiAppFSharp
 
 open Android.App
 open Android.Content.PM

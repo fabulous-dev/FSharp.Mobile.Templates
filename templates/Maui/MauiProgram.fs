@@ -1,4 +1,4 @@
-﻿namespace MauiApp
+﻿namespace MauiAppFSharp
 
 open Microsoft.Maui.Hosting
 open Microsoft.Maui.Controls.Hosting
