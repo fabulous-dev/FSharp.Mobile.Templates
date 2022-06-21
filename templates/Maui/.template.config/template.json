@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Fabulous contributors",
+  "classifications": [ "FSharp.Mobile" ], 
+  "name": "F# Maui Application",
+  "identity": "FSharp.Mobile.Templates.Maui",
+  "groupIdentity": "FSharp.Mobile.Templates.Maui",
+  "shortName": "maui-fsharp",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "sourceName": "MauiApp",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "include": ["**"],
+      "exclude": [
+        ".template.config/**/*",
+        "[Bb]in/**/*",
+        "[Oo]bj/**/*"
+      ]
+    }
+  ]
+}
