@@ -70,7 +70,7 @@ To build and test the templates locally:
 
 ```
 $ dotnet pack -c Release
-$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.0.0.4.nupkg
+$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.1.0.0.nupkg
 ```
 
 ### Acknowledgements
