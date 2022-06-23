@@ -17,7 +17,6 @@
 
             <Label
                 Text="Hello, World!"
-                TextColor="{StaticResource ForReal}"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />

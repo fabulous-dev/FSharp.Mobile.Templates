@@ -10,13 +10,14 @@
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<EnableDefaultItems>false</EnableDefaultItems>
+		<DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
 
 		<!-- Display name -->
 		<ApplicationTitle>MauiAppFSharp</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mauiappfsharp</ApplicationId>
-		<ApplicationIdGuid>8bbed4cd-aea0-477e-9d2c-a11eb2a9d9e0</ApplicationIdGuid>
+		<ApplicationIdGuid>8BBED4CD-AEA0-477E-9D2C-A11EB2A9D9E0</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -68,6 +69,10 @@
 		<!-- Styles -->
 		<EmbeddedResource Include="Resources\Styles\*" Exclude="Resources\Styles\Styles.fs" />
 		<Compile Include="Resources\Styles\Styles.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FSharp.Core" Version="6.0.3" />
 	</ItemGroup>
 
 	<ItemGroup Condition="$(TargetPlatformIdentifier) == 'android'">

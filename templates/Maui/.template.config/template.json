@@ -21,5 +21,9 @@
         "[Oo]bj/**/*"
       ]
     }
+  ],
+  "guids": [
+    "0E9CB125-F04D-4E4A-8A20-7EB1FD9B43FB",
+    "8BBED4CD-AEA0-477E-9D2C-A11EB2A9D9E0"
   ]
 }
