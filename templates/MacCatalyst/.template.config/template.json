@@ -10,7 +10,7 @@
     "language": "F#",
     "type": "project"
   },
-  "sourceName": "App.iOS",
+  "sourceName": "App.MacCatalyst",
   "preferNameDirectory": true,
   "sources": [
     {
