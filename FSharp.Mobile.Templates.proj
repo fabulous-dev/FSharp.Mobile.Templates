@@ -4,9 +4,9 @@
     <Title>FSharp.Mobile.Templates</Title>
     <Description>.NET Core SDK templates for bootstrapping new mobile projects in F#.</Description>
     <Authors>Fabulous contributors</Authors>
-    <PackageProjectUrl>https://github.com/fabulousfx/FSharp.Mobile.Templates</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/fsharp-mobile/FSharp.Mobile.Templates</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/fabulousfx/FSharp.Mobile.Templates.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/fsharp-mobile/FSharp.Mobile.Templates.git</RepositoryUrl>
     <PackageTags>dotnet-new;templates;mobile;fsharp</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageType>Template</PackageType>
