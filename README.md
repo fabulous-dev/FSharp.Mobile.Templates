@@ -1,6 +1,9 @@
 # FSharp.Mobile.Templates
 
-In this repository, you can find all the templates for creating apps on iOS and Android using .NET 6.0 and F# 6.0
+In this repository, you can find all the templates for creating mobile and desktop apps using .NET 7.0 and F# 7.0.
+
+NB. The Xamarin.Forms template will stay on .NET 6.0.  
+Microsoft never intended to migrate Xamarin.Forms from Mono to .NET 6.0/7.0, making it hard to upgrade to .NET 7.0.
 
 ### Prerequisites
 In order to build and run the Android and iOS projects, you need to install the corresponding workloads
@@ -70,7 +73,7 @@ To build and test the templates locally:
 
 ```
 $ dotnet pack -c Release
-$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.1.0.0.nupkg
+$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.1.1.0.nupkg
 ```
 
 ### Acknowledgements
