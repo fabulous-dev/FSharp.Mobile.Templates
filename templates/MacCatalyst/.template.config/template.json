@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Fabulous contributors",
+  "classifications": [ "FSharp.Mobile" ], 
+  "name": "F# Mac Catalyst Application",
+  "identity": "FSharp.Mobile.Templates.MacCatalyst",
+  "groupIdentity": "FSharp.Mobile.Templates.MacCatalyst",
+  "shortName": "maccatalyst-fsharp",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "sourceName": "App.MacCatalyst",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "include": ["**"],
+      "exclude": [
+        ".template.config/**/*",
+        "[Bb]in/**/*",
+        "[Oo]bj/**/*"
+      ]
+    }
+  ]
+}

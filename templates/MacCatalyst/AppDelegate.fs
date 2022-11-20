@@ -17,12 +17,12 @@ type AppDelegate() =
         let label = new UILabel(this.Window.Frame)
         label.BackgroundColor <-
             if UIDevice.CurrentDevice.CheckSystemVersion(13, 0) then
-                UIColor.SystemBackgroundColor
+                UIColor.SystemBackground
             else
                 UIColor.White
 
         label.TextAlignment <- UITextAlignment.Center
-        label.Text <- "Hello, .NET 6 and F# 6!"
+        label.Text <- "Hello, .NET 7 and F# 7!"
         vc.View.AddSubview(label)
         
         this.Window.RootViewController <- vc
