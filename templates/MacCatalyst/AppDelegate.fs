@@ -28,4 +28,3 @@ type AppDelegate() =
         this.Window.RootViewController <- vc
         this.Window.MakeKeyAndVisible()
         true
-       
