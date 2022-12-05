@@ -1,52 +1,66 @@
 ﻿namespace App.iOS
 
- open UIKit
- open Foundation
+open System.Runtime.InteropServices
+open UIKit
+open Foundation
 
- [<Register("SceneDelegate")>]
- type SceneDelegate() =
-     inherit UIResponder()
+[<Register(nameof SceneDelegate)>]
+type SceneDelegate() =
+    inherit UIWindowSceneDelegate()
 
-     [<Export("window")>]
-     member val Window : UIWindow = null with get, set
+    override val Window = null with get, set
 
-     [<Export("scene:willConnectToSession:options:")>]
-     member _.WillConnect(scene: UIScene, session: UISceneSession, connectionOptions: UISceneConnectionOptions) =
-         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-         // This delegate does not imply the connecting scene or session are new (see UIApplicationDelegate `GetConfiguration` instead).
-        ()
+    override this.WillConnect(scene: UIScene, _: UISceneSession, _: UISceneConnectionOptions) =
+        let scene = scene :?> UIWindowScene
 
+        let win =
+            new UIWindow(scene.CoordinateSpace.Bounds)
 
-     [<Export("sceneDidDisconnect:")>]
-     member _.DidDisconnect(scene: UIScene) =
-         // Called as the scene is being released by the system.
-         // This occurs shortly after the scene enters the background, or when its session is discarded.
-         // Release any resources associated with this scene that can be re-created the next time the scene connects.
-         // The scene may re-connect later, as its session was not necessarily discarded (see UIApplicationDelegate `DidDiscardSceneSessions` instead).
-        ()
+        let label = new UILabel()
 
-     [<Export("sceneDidBecomeActive:")>]
-     member _.DidBecomeActive(scene: UIScene) =
-         // Called when the scene has moved from an inactive state to an active state.
-         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
-         ()
+        label.BackgroundColor <-
+            if UIDevice.CurrentDevice.CheckSystemVersion(13, 0) then
+                UIColor.SystemBackground
+            else
+                UIColor.White
 
-     [<Export("sceneWillResignActive:")>]
-     member _.WillResignActive(scene: UIScene) =
-         // Called when the scene will move from an active state to an inactive state.
-         // This may occur due to temporary interruptions (ex. an incoming phone call).
-         ()
+        let vc = new UIViewController()
+        label.TextAlignment <- UITextAlignment.Center
+        label.TranslatesAutoresizingMaskIntoConstraints <- false
+        label.Text <- "Hello, .NET 7 and F# 7!"
+        vc.View.AddSubview(label)
 
-     [<Export("sceneWillEnterForeground:")>]
-     member _.WillEnterForeground(scene: UIScene) =
-         // Called as the scene transitions from the background to the foreground.
-         // Use this method to undo the changes made on entering the background.
-         ()
+        NSLayoutConstraint.ActivateConstraints(
+            [| label.TopAnchor.ConstraintEqualTo(vc.View.TopAnchor, NFloat 0.)
+               label.LeadingAnchor.ConstraintEqualTo(vc.View.LeadingAnchor, NFloat 0.)
+               label.TrailingAnchor.ConstraintEqualTo(vc.View.TrailingAnchor, NFloat 0.)
+               label.BottomAnchor.ConstraintEqualTo(vc.View.BottomAnchor, NFloat 0.) |]
+        )
 
-     [<Export("sceneDidEnterBackground:")>]
-     member _.DidEnterBackground(scene: UIScene) =
-         // Called as the scene transitions from the foreground to the background.
-         // Use this method to save data, release shared resources, and store enough scene-specific state information
-         // to restore the scene back to its current state.
-         ()
+        win.RootViewController <- vc
+        this.Window <- win
+        win.WindowScene <- scene
+        win.MakeKeyAndVisible()
+
+    /// Called as the scene is being released by the system.
+    /// This occurs shortly after the scene enters the background, or when its session is discarded.
+    /// Release any resources associated with this scene that can be re-created the next time the scene connects.
+    /// The scene may re-connect later, as its session was not necessarily discarded (see UIApplicationDelegate `DidDiscardSceneSessions` instead).
+    override _.DidDisconnect(_: UIScene) = ()
+
+    /// Called when the scene has moved from an inactive state to an active state.
+    /// Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    override _.DidBecomeActive(_: UIScene) = ()
+
+    /// Called when the scene will move from an active state to an inactive state.
+    /// This may occur due to temporary interruptions (ex. an incoming phone call).
+    override _.WillResignActive(_: UIScene) = ()
+
+    /// Called as the scene transitions from the background to the foreground.
+    /// Use this method to undo the changes made on entering the background.
+    override _.WillEnterForeground(_: UIScene) = ()
+
+    /// Called as the scene transitions from the foreground to the background.
+    /// Use this method to save data, release shared resources, and store enough scene-specific state information
+    /// to restore the scene back to its current state.
+    override _.DidEnterBackground(_: UIScene) = ()
