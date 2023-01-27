@@ -17,7 +17,7 @@ jobs:
       run: dotnet pack --configuration Release --output nupkgs --version-suffix "nightly-${GITHUB_RUN_ID}" FSharp.Mobile.Templates.proj
     - name: Push
       run: |
-        dotnet nuget add source https://nuget.pkg.github.com/fabulousfx/index.json --name github
+        dotnet nuget add source https://nuget.pkg.github.com/fabulous-dev/index.json --name github
         dotnet nuget push "nupkgs/*.nupkg" --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
 
   nuget:
