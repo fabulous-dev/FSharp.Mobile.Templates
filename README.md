@@ -2,6 +2,9 @@
 
 In this repository, you can find all the templates for creating mobile and desktop apps using .NET 7.0 and F# 7.0.
 
+Please note that those templates are "plain" F# templates, no additional dependencies.  
+If you are interested in the Fabulous templates, please use either [Fabulous.XamarinForms templates](https://github.com/fabulous-dev/Fabulous.XamarinForms) or [Fabulous.MauiControls templates](https://github.com/fabulous-dev/Fabulous.MauiControls).
+
 NB. The Xamarin.Forms template will stay on .NET 6.0.  
 Microsoft never intended to migrate Xamarin.Forms from Mono to .NET 6.0/7.0, making it hard to upgrade to .NET 7.0.
 
