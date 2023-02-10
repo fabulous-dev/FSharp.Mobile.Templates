@@ -33,4 +33,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release --output nupkgs FSharp.Mobile.Templates.proj
     - name: Push
-      run: dotnet nuget push "nupkgs/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
+      run: dotnet nuget push "nupkgs/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate
