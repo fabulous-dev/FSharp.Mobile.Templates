@@ -14,11 +14,11 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Pack
-      run: dotnet pack --configuration Release --output nupkgs --version-suffix "nightly-${GITHUB_RUN_ID}" FSharp.Mobile.Templates.proj
+      run: dotnet pack FSharp.Mobile.Templates.proj --configuration Release --version-suffix "nightly-${GITHUB_RUN_ID}" --property PackageOutputPath=${PWD}/nupkgs
     - name: Push
       run: |
         dotnet nuget add source https://nuget.pkg.github.com/fabulous-dev/index.json --name github
-        dotnet nuget push "nupkgs/*.nupkg" --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
+        dotnet nuget push "nupkgs/*" --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
 
   nuget:
     runs-on: ubuntu-latest
@@ -31,6 +31,6 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Pack
-      run: dotnet pack --configuration Release --output nupkgs FSharp.Mobile.Templates.proj
+      run: dotnet pack FSharp.Mobile.Templates.proj --configuration Release--property PackageOutputPath=${PWD}/nupkgs
     - name: Push
-      run: dotnet nuget push "nupkgs/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate
+      run: dotnet nuget push "nupkgs/*" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate
