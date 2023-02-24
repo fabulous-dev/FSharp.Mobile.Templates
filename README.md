@@ -1,15 +1,12 @@
 # FSharp.Mobile.Templates
 
-In this repository, you can find all the templates for creating mobile and desktop apps using .NET 7.0 and F# 7.0.
+In this repository, you can find all the templates for creating mobile and desktop apps using .NET 8.0 and F# 7.0.
 
 Please note that those templates are "plain" F# templates, no additional dependencies. If you are interested in the Fabulous templates you can use:
 
 - [Fabulous.XamarinForms templates](https://github.com/fabulous-dev/Fabulous.XamarinForms)
 - [Fabulous.MauiControls templates](https://github.com/fabulous-dev/Fabulous.MauiControls)
 - [Fabulous.Avalonia templates](https://github.com/fabulous-dev/Fabulous.Avalonia)
-
-NB. The Xamarin.Forms template will stay on .NET 6.0.  
-Microsoft never intended to migrate Xamarin.Forms from Mono to .NET 6.0/7.0, making it hard to upgrade to .NET 7.0.
 
 ### Prerequisites
 In order to build and run the Android and iOS projects, you need to install the corresponding workloads
@@ -20,21 +17,11 @@ dotnet workload install maccatalyst
 dotnet workload install maui
 ```
 
-For the Xamarin.Forms template, you'll also need to go into the file `nuget.config` and replace `USERNAME` with your GitHub username and `TOKEN` with your personal access token.
-See https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry#authenticating-with-a-personal-access-token
-
 ### Available templates
 - Android
 - iOS
 - Mac Catalyst
-- Xamarin.Forms (Android, iOS)
 - Maui (Android, iOS, Mac Catalyst, Windows, Tizen)
-
-### Known issues
-
-- First build fails on Android (native, XF and MAUI)
-  - You need to compile 2 times to get it working. It's a current limitation of FSharp.Android.Resource used to expose the resources.
-  - You might also need to unload/reopen either the Android project or the solution for Intellisense to find the resources
 
 ### Install
 
@@ -54,7 +41,6 @@ Template Name                 Short Name          Language  Tags
 ----------------------------  ------------------- --------  -------------
 F# Android Application        android-fsharp      F#        FSharp.Mobile
 F# iOS Application            ios-fsharp          F#        FSharp.Mobile
-F# Xamarin.Forms Application  xf-fsharp           F#        FSharp.Mobile
 F# Maui Application           maui-fsharp         F#        FSharp.Mobile
 F# Mac Catalyst Application   maccatalyst-fsharp  F#        FSharp.Mobile
 ```
@@ -79,7 +65,7 @@ To build and test the templates locally:
 
 ```
 $ dotnet pack -c Release
-$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.1.1.0.nupkg
+$ dotnet new -i .\bin\Release\FSharp.Mobile.Templates.8.0.0.nupkg
 ```
 
 ### Acknowledgements

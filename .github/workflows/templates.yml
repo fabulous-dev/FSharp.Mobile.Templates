@@ -31,6 +31,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Pack
-      run: dotnet pack FSharp.Mobile.Templates.proj --configuration Release--property PackageOutputPath=${PWD}/nupkgs
+      run: dotnet pack FSharp.Mobile.Templates.proj --configuration Release --property PackageOutputPath=${PWD}/nupkgs
     - name: Push
       run: dotnet nuget push "nupkgs/*" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate

@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0-maccatalyst</TargetFramework>
     <OutputType>Exe</OutputType>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
 </PropertyGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -31,5 +32,8 @@
     <Compile Include="AppDelegate.fs" />
     <Compile Include="SceneDelegate.fs" />
     <Compile Include="Main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="7.0.200" />
   </ItemGroup>
 </Project>
