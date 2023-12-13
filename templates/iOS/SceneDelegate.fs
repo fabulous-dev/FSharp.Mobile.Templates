@@ -27,7 +27,7 @@ type SceneDelegate() =
         let vc = new UIViewController()
         label.TextAlignment <- UITextAlignment.Center
         label.TranslatesAutoresizingMaskIntoConstraints <- false
-        label.Text <- "Hello, .NET 7 and F# 7!"
+        label.Text <- "Hello, .NET 8 and F# 8!"
         vc.View.AddSubview(label)
 
         NSLayoutConstraint.ActivateConstraints(
