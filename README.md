@@ -1,6 +1,6 @@
 # FSharp.Mobile.Templates
 
-In this repository, you can find all the templates for creating mobile and desktop apps using .NET 8.0 and F# 7.0.
+In this repository, you can find all the templates for creating mobile and desktop apps using .NET 8.0 and F# 8.0.
 
 Please note that those templates are "plain" F# templates, no additional dependencies. If you are interested in the Fabulous templates you can use:
 
