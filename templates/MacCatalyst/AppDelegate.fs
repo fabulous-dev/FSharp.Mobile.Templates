@@ -22,7 +22,7 @@ type AppDelegate() =
                 UIColor.White
 
         label.TextAlignment <- UITextAlignment.Center
-        label.Text <- "Hello, .NET 7 and F# 7!"
+        label.Text <- "Hello, .NET 8 and F# 8!"
         vc.View.AddSubview(label)
         
         this.Window.RootViewController <- vc
