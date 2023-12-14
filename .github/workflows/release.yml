@@ -1,8 +1,8 @@
 name: Release
+
 on:
   push:
-    tags: ['[0-9]+.[0-9]+.[0-9]+', '[0-9]+.[0-9]+.[0-9]+-pre[0-9]+']
-    paths-ignore: [ 'docs/**' ]
+    branches: [ main ]
 
 permissions: write-all
 
@@ -39,12 +39,6 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
-      - name: Install dotnet workload
-        run: dotnet workload restore
-      - name: Restore
-        run: dotnet restore ${SLN_FILE}
-      - name: Build
-        run: dotnet build ${SLN_FILE} -p:Version=${RELEASE_VERSION} -c ${CONFIG} --no-restore
       - name: Pack
         run: |
           find templates -type f -name template.json | xargs sed -i bak "s/PKG_VERSION/${RELEASE_VERSION}/g"
